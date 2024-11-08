@@ -1,0 +1,88 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"React Functional Component": {
+		"prefix": "rfc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"const $1 = () => {",
+			"    return (",
+			"        <div>",
+			"            $2",
+			"        </div>",
+			"    );",
+			"};",
+			"",
+			"export default $1;"
+		],
+		"description": "React Functional Component"
+	},
+	"React Functional Component with Props": {
+		"prefix": "rfcp",
+		"body": [
+			"import React from 'react';",
+			"",
+			"interface $1Props {",
+			"    $2",
+			"}",
+			"",
+			"const $1: React.FC<$1Props> = ({ $2 }) => {",
+			"    return (",
+			"        <div>",
+			"            $3",
+			"        </div>",
+			"    );",
+			"};",
+			"",
+			"export default $1;"
+		],
+		"description": "React Functional Component with Props"
+	},
+	"Variable Console Log": {
+		"prefix": "vl",
+		"body": [
+			"console.log('$1', $1);"
+		],
+		"description": "Cool Console Log"
+	},
+	"Styled Success Console Log": {
+		"prefix": "scl",
+		"body": [
+			"console.log('%c${1:Success message}', 'font-size: 14px; padding: 5px 10px; margin: 5px 0; border-radius: 5px; font-weight: bold; text-shadow: 1px 1px 1px rgba(0,0,0,0.2); background: linear-gradient(to right, #00b09b, #96c93d); color: white;');$0"
+		],
+		"description": "Log a styled success message to the console"
+	},
+	"Styled Error Console Log": {
+		"prefix": "ecl",
+		"body": [
+			"console.log('%c${1:Error message}', 'font-size: 14px; padding: 5px 10px; margin: 5px 0; border-radius: 5px; font-weight: bold; text-shadow: 1px 1px 1px rgba(0,0,0,0.2); background: linear-gradient(to right, #ff416c, #ff4b2b); color: white;');$0"
+		],
+		"description": "Log a styled error message to the console"
+	},
+	"Styled Info Console Log": {
+		"prefix": "icl",
+		"body": [
+			"console.log('%c${1:Info message}', 'font-size: 14px; padding: 5px 10px; margin: 5px 0; border-radius: 5px; font-weight: bold; text-shadow: 1px 1px 1px rgba(0,0,0,0.2); background: linear-gradient(to right, #2193b0, #6dd5ed); color: white;');$0"
+		],
+		"description": "Log a styled info message to the console"
+	},
+	"Styled Warning Console Log": {
+		"prefix": "wcl",
+		"body": [
+			"console.log('%c${1:Warning message}', 'font-size: 14px; padding: 5px 10px; margin: 5px 0; border-radius: 5px; font-weight: bold; text-shadow: 1px 1px 1px rgba(0,0,0,0.2); background: linear-gradient(to right, #f2994a, #f2c94c); color: white;');$0"
+		],
+		"description": "Log a styled warning message to the console"
+	}
+}
