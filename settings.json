@@ -83,7 +83,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "workbench.editor.enablePreview": false,
   "window.newWindowDimensions": "inherit",
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "alt",
   "window.nativeFullScreen": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
