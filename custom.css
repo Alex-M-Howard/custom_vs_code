@@ -146,9 +146,9 @@
   display: none !important;
 }
 
-.titlebar-right > * {
+/* .titlebar-right > * {
   display: none !important;
-}
+} */
 
 /* Command Palette */
 .quick-input-widget {
